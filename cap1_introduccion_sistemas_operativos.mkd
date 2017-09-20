@@ -1,0 +1,39 @@
+# Introducción a los Sistemas Operativos
+
+## Definición de los sistemas operativos
+
+ El sistema operativo es el programa principal que se ejecuta en toda computadora de propósito general.
+
+
+## Funciones y objetivos del sistema operativo
+
+1. Abstracción :El sistema operativo se encarga de proporcionar una seria de abstracciones para que los programadores puedan enfocarse en resolver problemas. Un ejemplo de abstracción es los sistemas de archivos.
+2. Administración de recursos : Gestionar la asignación de recursos aplicando políticas para que se utilicen de manera efectiva y acorde a las necesidades para dicho sistema.
+3. Aislamiento : En un sistema multiusuario y multitarea cada proceso y usuario no tiene que preocuparse por otros que estén usando el sistema
+
+## Evolución de los Sistemas operativos
+
+1. Proceso por lotes a.k.a. batch processing
+Debido a la introducción de las tarjetas perforadas y los lectores en los años 50, el tiempo en que las computadoras estaban sin hacer nada se disminuyo enormemente. El papel del sistema monitor ayudaba al operador en la carga de los programas y bibliotecas, notificación de resultados y la contabilidad de recursos empleados para su cobro. Se mejoraron los sistemas de control para evitar la corrupccion de otros trabjos por causa de errores  por medio de alarmas de interrupccion.
+
+2. Sistemas en lotes con dispositivos de carga a.k.a spool
+spool es un mecanismo de entrada / salida que permite  que una computadora de proposito especifico, mucho mas economica y limitada, leyera tarjetas y las convierta en cinta magneticas que era much mas rapido.
+
+3. Sistemas multiprogramados
+Debido que cuando un proceso esta dedicado al calculo numerico, el sistema esta limitado por el CPU ( cpu-bound) y cuando esta letendo medios externos ( tarjetas o cintas) esta I-OBound, los sistemas multiprogramados maximizan l tiempo de uso efectivo del procesador ejecutando varios procesos al mismo tiempo. Un proceso no debe sobreescribir el espacio de memoria  de otro , debido a esto surgio la unidad  de manejo de memoria MMU
+
+4. Sistemas de tiempo compartido
+Aparecieron las terminales, la tarea de programacion y depuracion del codigo se simplifico fuertemente al poder hacer el programador directamente cambios y someter el programa a la ejecucion inmediata. La computadora no perdia tiempo esperando a que un programa estara listo.
+Aparecieron tipos de control de multitarea:
+* Multitarea cooperativa o no apropiativa:  Cada proceso tenia control del CPU hasta que este hacia una llamada al sistema indicando que podia ceder el control.
+* Multitarea preventiva o apropiativa: El reloj del sistema interrumpe periodicamente los diversos proceso, transfiriendo forzosamete el control nuevamente al sistema operativo y este puede elegir otro proceso para continua.
+
+Tambien se incluyo el concepto de la prioridad en los procesos
+
+
+
+## Tipos de sistemas operativos
+
+* Monolitico : Solo hay un proceso privilegiado(el sistema operativo) que opera en modo supervisor y dentro de el se encuentran las rutinas para las tareas que realiza el sistema operativo.
+* Microkernel
+* Hibrido
