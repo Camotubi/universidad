@@ -24,6 +24,7 @@ Debido que cuando un proceso esta dedicado al calculo numérico, el sistema esta
 
 4. Sistemas de tiempo compartido.
 Aparecieron las terminales, la tarea de programación y depuración del código se simplifico fuertemente al poder hacer el programador directamente cambios y someter el programa a la ejecución inmediata. La computadora no perdía tiempo esperando a que un programa estará listo.
+
 Aparecieron tipos de control de multitarea:
 * Multitarea cooperativa o no apreciativa:  Cada proceso tenia control del CPU hasta que este hacia una llamada al sistema indicando que podía ceder el control.
 * Multitarea preventiva o apreciativa: El reloj del sistema interrumpe periódicamente los diversos proceso, transfiriendo forzosamente el control nuevamente al sistema operativo y este puede elegir otro proceso para continua.
