@@ -36,5 +36,10 @@ También se incluyo el concepto de la prioridad en los procesos
 ## Tipos de sistemas operativos
 
 * Monolítico : Solo hay un proceso privilegiado(el sistema operativo) que opera en modo supervisor y dentro de el se encuentran las rutinas para las tareas que realiza el sistema operativo.
+Con este se simplifica los mecanismo de comunicación llevando a una mayor velocidad de ejecución.
+Ademas permite mayor fexibilidad al adecuarse a nuevos requisitos debido a que solo se debe modificar el nucleo.
+
 * Microkernel: El núcleo del sistema operativo se mantiene en el mínimo posible de funcionalidad, todas las demás tareas que implementan el acceso a dispositivos y demás políticas de uso del sistema se mantienen como procesos especiales sin privilegios.
-* Híbrido:
+Permiten una implementacion mas elegante y facilitan la comprension por separado de cada pieza. Pueden autorepararse con mayor facilidad ya que la mayoria de los componentes estan fuera del nucleo.
+
+* Híbrido: Parte de los sistemas estan corriendo a nivel de usuario como a su vez otros estan corriendo a nivel privilegiado.
